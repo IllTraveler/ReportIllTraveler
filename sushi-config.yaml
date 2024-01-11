@@ -5,9 +5,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.us.illTraveler
 canonical: http://hl7.org/fhir/us/reportofilltraveler
-name: CDC DGMQ Report of Ill Traveler
-title: CDC DGMQ Report of Ill Traveler
-description:  Implementation Guide CDC DGMQ Report of Ill Traveler
+name: CDC DGMH Report of Ill Traveler
+title: CDC DGMH Report of Ill Traveler
+description:  Implementation Guide for CDC DGMH Report of Ill Traveler
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -95,10 +95,11 @@ menu:
     Air Contact Investigations: airCIprocess.html
     Public Health Case Reporting: case.html
   Examples:
-    Single leg air travel: singlelegtravel.html
-    Multiple leg air travel: multilegtravel.html
-    Tuberculosis: tuberculosis.html
-    Measles: measles.html
+    Single leg air travel: Observation-SingleLegFlightExample.html
+    Tuberculosis: Condition-TuberculosisExample.html
+    Simple report of Ill Traveler: ReportOfIllTravelerSimpleExample.html
+#    Multiple leg air travel: multilegtravel.html
+#    Measles: measles.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

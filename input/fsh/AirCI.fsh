@@ -16,7 +16,7 @@ Description: "A bundle of resources related to a report of an ill traveler."
 * entry ^slicing.rules = #closed
 * entry ^slicing.description = "Slicing based on the profile conformance of the entry"
 * entry and entry.resource MS
-* entry contains 
+* entry contains
     Labs 0..* and
     TravelerInfo 1..1 and
     FlightInfo 0..* and
@@ -26,7 +26,7 @@ Description: "A bundle of resources related to a report of an ill traveler."
 * entry[Labs] ^definition = "The labs supporting the diagnosis of the disease."
 * entry[TravelerInfo].resource only Traveler
 * entry[TravelerInfo] ^short = "Traveler Info"
-* entry[TravelerInfo] ^definition = "Information about the travler who is sick"
+* entry[TravelerInfo] ^definition = "Information about the traveler who is sick"
 * entry[TravelerInfo].resource 1..1
 * entry[TravelerInfo].request 1..1
 * entry[FlightInfo].resource only FlightItinerary
@@ -42,10 +42,11 @@ Parent: Composition
 Description: "Report of an ill traveler"
 * subject 1..1
 * extension contains 
-    DateTransferedToQstation named qstation-transfer-date 0..1 MS and
-    Qstation named qstation-name 0..1 MS
-* extension[qstation-transfer-date] ^short = "Date transferred to Q-Station"
-* extension[qstation-name] ^short = "Date transferred to Q-Station"
+    DateTransferedToStation named station-transfer-date 0..1 MS and
+    PortHealthStation named port-health-station 0..1 MS and
+    FlightDetail named flight-detail 0..*
+* extension[station-transfer-date] ^short = "Date transferred to Q-Station"
+* extension[port-health-station] ^short = "Name of Q-Station"
 * title = "Report of Ill Traveler"
 * implicitRules 0..1
 * contained 0..0
@@ -86,6 +87,49 @@ Description: "Report of an ill traveler"
 
 
 
+Profile: ReportOfIllTravelerSimple
+Parent: Composition
+Description: "Simple report of an ill traveler"
+* subject 1..1
+* extension contains 
+    DateTransferedToStation named station-transfer-date 0..1 MS and
+    PortHealthStation named port-health-station 0..1 MS and
+    FlightDetail named flight-detail 0..* and
+    InfectiousDiseaseName named infectious-disease-name 1..1 MS and
+    Symptom  named symptoms 0..* MS
+* extension[station-transfer-date] ^short = "Date transferred to Q-Station"
+* extension[port-health-station] ^short = "Name of Q-Station"
+* title = "Simple Report of Ill Traveler"
+* implicitRules 0..0
+* contained 0..0
+* encounter 0..0
+* confidentiality 0..0
+//* type = #55751-2 "Public health Case report"
+* relatesTo 0..0
+* event 0..0
+* section 0..1
+* custodian 0..0
+* category 0..0
+* status = #final
+* attester 0..0
+* author ^short = "Contact info for the case report"
+* author only Reference(RelatedPerson or Organization)
+* author  ^slicing.discriminator.type = #value
+* author  ^slicing.discriminator.path = "code"
+* author  ^slicing.rules = #open
+* author  ^slicing.description = ""
+* author  ^slicing.ordered = false
+* author  contains
+  stateContact 0..* and
+  localContact 0..* and
+  diseaseContact 0..* 
+* author[stateContact] only Reference(RelatedPerson or Organization)
+* author[localContact] only Reference(RelatedPerson or Organization)
+* author[diseaseContact] only Reference(RelatedPerson or Organization)
+
+
+
+
 Profile: FlightItinerary
 Parent: $eCRTransportation
 Description: "Flight information for an ill traveler"
@@ -94,15 +138,33 @@ Description: "Flight information for an ill traveler"
 * status = #preliminary
 * extension contains
   FlightDetail named flight-detail 0..*
-
+* implicitRules 0..0
+* contained 0..0
+* basedOn 0..0
+* partOf 0..0
+* issued 0..0
+* performer 0..0
+* dataAbsentReason 0..0
+* interpretation 0..0
+* bodySite 0..0
+* method 0..0
+* specimen 0..0
+* device 0..0
+* referenceRange 0..0
+* hasMember 0..0
+* derivedFrom 0..0
+* component 0..0
+* focus 0..0
+* encounter 0..0
 
 
 Profile: InfectiousDisease
 Parent: Condition
-Description: "The Infectious Disease profile sets minimum expectations for the Observation Resource to record, important information about an Infections Disease associated with an Ill Traveler"
+Description: "The Infectious Disease profile sets minimum expectations for the Observation Resource to record, important information about an Infectious Disease associated with an Ill Traveler"
 * subject only Reference(Traveler)
 * extension contains
-  InfectiousDiseaseName named infectious-disease-name 1..1 MS 
+  InfectiousDiseaseName named infectious-disease-name 1..1 MS and
+  Symptom  named symptoms 0..* MS
 * extension[infectious-disease-name] ^short = "Name of the Infectious Disease"
 * evidence ^slicing.discriminator.type = #value
 * evidence ^slicing.discriminator.path = "code"

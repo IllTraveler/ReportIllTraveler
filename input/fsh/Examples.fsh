@@ -16,6 +16,22 @@ Description: "An example of a report of an ill traveler."
 * section[infectiousDisease].entry = Reference(TuberculosisExample)
 * section[flightItinerary].entry = Reference(FlightExample)
 
+Instance: ReportOfIllTravelerSimpleExample
+InstanceOf: ReportOfIllTravelerSimple
+Description: "An example of a simple  report of an ill traveler."
+* author[stateContact] = Reference(StateExample)
+* status = #final
+* subject = Reference(travelerExample)
+* date = "2023-12-03T19:43:30.000Z"
+* type = #55751-2 "Public health Case report"
+* extension[flight-detail].extension[departureAirport].valueCodeableConcept = #DCA "Washington DC"
+* extension[flight-detail].extension[arrivalAirport].valueCodeableConcept = #LAX "Los Angeles"
+* extension[flight-detail].extension[flightNumber].valueString = "DL364"
+* extension[flight-detail].extension[seatNumber].valueString = "17B"
+* extension[flight-detail].extension[flightDuration].valueInteger = 5
+* extension[flight-detail].extension[airline].valueString = "United"
+* extension[infectious-disease-name].valueCodeableConcept = #TB "Tuberculosis"
+
 Instance: StateExample
 InstanceOf: Organization
 Description: "An Example of a State Health Department"
@@ -23,10 +39,10 @@ Description: "An Example of a State Health Department"
 
 Instance: travelerExample
 InstanceOf: Traveler
-Description: "An example of a patient with a license to krill."
+Description: "An example of a traveler."
 * name
   * given[0] = "James"
-  * family = "Pond"
+  * family = "Trivago"
 * gender = #Male
 * identifier.use = #usual
 * identifier.type = $IdType#MR "Medical Record Number"
@@ -63,7 +79,7 @@ Description: "An example of a flight itinerary with only one flight."
 * extension[flight-detail].extension[arrivalAirport].valueCodeableConcept = #LAX "Los Angeles"
 * extension[flight-detail].extension[flightNumber].valueString = "DL364"
 * extension[flight-detail].extension[seatNumber].valueString = "17B"
-* extension[flight-detail].extension[flightDuration].valueString = "5 hours"
+* extension[flight-detail].extension[flightDuration].valueInteger = 5
 * extension[flight-detail].extension[airline].valueString = "United"
 
 Instance: MultipleLegFlightExample
@@ -73,7 +89,7 @@ Description: "An example of a flight itinerary with multiple flights."
 * extension[flight-detail].extension[arrivalAirport].valueCodeableConcept[0] = #LAX "Los Angeles"
 * extension[flight-detail].extension[flightNumber].valueString[0] = "DL364"
 * extension[flight-detail].extension[seatNumber].valueString[0] = "17B"
-* extension[flight-detail].extension[flightDuration].valueString[0] = "5 hours"
+* extension[flight-detail].extension[flightDuration].valueInteger[0] = 5
 /*
 * extension[flight-detail].extension[departureAirport][+].valueCodeableConcept = #DCA "Washington DC"
 * extension[flight-detail].extension[arrivalAirport].valueCodeableConcept[+] = #LAX "Los Angeles"

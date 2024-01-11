@@ -12,5 +12,6 @@ Alias:   $eCRCondition = http://hl7.org/fhir/us/ecr/StructureDefinition/us-ph-co
 Alias:   $IdType = http://terminology.hl7.org/CodeSystem/v2-0203
 Alias:   $SNOMEDCT = http://snomed.info/sct
 Alias:   $LOINC = http://loinc.org
+Alias:   $Symptoms = http://hl7.org/fhir/ValueSet/manifestation-or-symptom
 
 

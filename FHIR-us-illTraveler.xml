@@ -20,14 +20,17 @@
 <artifact id="StructureDefinition/lab-results" key="StructureDefinition-lab-results" name="Lab Results"/>
 <artifact id="Observation/MultipleLegFlightExample" key="Observation-MultipleLegFlightExample" name="MultipleLegFlightExample"/>
 <artifact id="StructureDefinition/disease-name" key="StructureDefinition-disease-name" name="Name of Disease"/>
-<artifact id="StructureDefinition/qstation-name" key="StructureDefinition-qstation-name" name="Q-station Name"/>
-<artifact id="CodeSystem/quarantine-station-system" key="CodeSystem-quarantine-station-system" name="Quarantine Stations"/>
-<artifact id="ValueSet/QstationsVS" key="ValueSet-QstationsVS" name="Quarintine Stations VS"/>
+<artifact id="StructureDefinition/port-health-station" key="StructureDefinition-port-health-station" name="Port Health Station Name"/>
+<artifact id="CodeSystem/port-health-station-system" key="CodeSystem-port-health-station-system" name="Port Health Stations"/>
+<artifact id="ValueSet/PortHealthStationVS" key="ValueSet-PortHealthStationVS" name="Port Health Stations VS"/>
 <artifact id="StructureDefinition/rash-onset" key="StructureDefinition-rash-onset" name="Rash Onset Date"/>
 <artifact id="Composition/ReportOfIllTravelerExample" key="Composition-ReportOfIllTravelerExample" name="Report of Ill Traveler"/>
 <artifact id="StructureDefinition/ReportOfIllTraveler" key="StructureDefinition-ReportOfIllTraveler" name="ReportOfIllTraveler"/>
+<artifact id="StructureDefinition/ReportOfIllTravelerSimple" key="StructureDefinition-ReportOfIllTravelerSimple" name="ReportOfIllTravelerSimple"/>
+<artifact id="Composition/ReportOfIllTravelerSimpleExample" key="Composition-ReportOfIllTravelerSimpleExample" name="Simple Report of Ill Traveler"/>
 <artifact id="Observation/SingleLegFlightExample" key="Observation-SingleLegFlightExample" name="SingleLegFlightExample"/>
 <artifact id="Organization/StateExample" key="Organization-StateExample" name="StateExample"/>
+<artifact id="StructureDefinition/symptom" key="StructureDefinition-symptom" name="Symptoms"/>
 <artifact id="StructureDefinition/Traveler" key="StructureDefinition-Traveler" name="Traveler"/>
 <artifact id="ValueSet/TuberculosisVS" key="ValueSet-TuberculosisVS" name="Tuberculosis VS"/>
 <artifact id="Condition/TuberculosisExample" key="Condition-TuberculosisExample" name="TuberculosisExample"/>

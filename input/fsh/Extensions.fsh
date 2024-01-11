@@ -1,17 +1,17 @@
 //Extensions
-Extension: DateTransferedToQstation
+Extension: DateTransferedToStation
 Id: transfer-date
 Title: "Ill traveler transfer date"
-Description: "The date that an ill traveler was transferred to Quartintine Station"
+Description: "The date that an ill traveler was transferred to Port Health Station"
 * value[x] only date  
 * value[x] 0..1 MS 
 
-Extension: Qstation
-Id: qstation-name
-Title: "Q-station Name"
-Description: "Name of the Q-station traveler was transferred to"
+Extension: PortHealthStation
+Id: port-health-station
+Title: "Port Health Station Name"
+Description: "Name of the Port Health Station the traveler was transferred to"
 * value[x] only CodeableConcept
-* valueCodeableConcept from QstationsVS (required)    
+* valueCodeableConcept from PortHealthStationVS (required)    
 * value[x] 0..1 MS 
 
 Extension: ChestXrayResults
@@ -20,6 +20,14 @@ Title: "Chest X-ray"
 Description: "Results of X-Ray"
 * value[x] only Reference($USCoreObservationClinicalResult)
 * value[x] 0..1 MS 
+
+Extension: Symptom
+Id: symptom
+Title: "Symptoms"
+Description: "Symptoms present in Traveler "
+* value[x] only CodeableConcept
+* valueCodeableConcept from $Symptoms (required)    
+
 
 Extension: RashOnsetDate
 Id: rash-onset
@@ -62,7 +70,7 @@ It does not cover each leg of an itinerary. Each leg requires a flightDetail "
 * extension[seatNumber].value[x] only string
 * extension[seatNumber].value[x] 1..1
 * extension[seatNumber] ^short = "Seat Number"
-* extension[flightDuration].value[x] only string
+* extension[flightDuration].value[x] only integer
 * extension[flightDuration].value[x] 1..1
 * extension[flightDuration] ^short = "Flight Duration in Hours"
 * extension[satInSeat].value[x] only boolean
