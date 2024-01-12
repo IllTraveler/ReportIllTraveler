@@ -17,6 +17,7 @@
 <artifact id="ValueSet/InfectiousDiseaseNameVS" key="ValueSet-InfectiousDiseaseNameVS" name="Infectious Disease VS"/>
 <artifact id="ValueSet/InfectiousDiseaseVS" key="ValueSet-InfectiousDiseaseVS" name="Infectious Disease VS"/>
 <artifact id="StructureDefinition/InfectiousDisease" key="StructureDefinition-InfectiousDisease" name="InfectiousDisease"/>
+<artifact id="StructureDefinition/lab-result" key="StructureDefinition-lab-result" name="Lab Result"/>
 <artifact id="StructureDefinition/lab-results" key="StructureDefinition-lab-results" name="Lab Results"/>
 <artifact id="Observation/MultipleLegFlightExample" key="Observation-MultipleLegFlightExample" name="MultipleLegFlightExample"/>
 <artifact id="StructureDefinition/disease-name" key="StructureDefinition-disease-name" name="Name of Disease"/>
@@ -25,6 +26,7 @@
 <artifact id="ValueSet/PortHealthStationVS" key="ValueSet-PortHealthStationVS" name="Port Health Stations VS"/>
 <artifact id="StructureDefinition/rash-onset" key="StructureDefinition-rash-onset" name="Rash Onset Date"/>
 <artifact id="Composition/ReportOfIllTravelerExample" key="Composition-ReportOfIllTravelerExample" name="Report of Ill Traveler"/>
+<artifact id="CapabilityStatement/IllTravelerReportCapabilityStatement" key="CapabilityStatement-IllTravelerReportCapabilityStatement" name="Report of Ill Traveler API CapabilityStatement"/>
 <artifact id="StructureDefinition/ReportOfIllTraveler" key="StructureDefinition-ReportOfIllTraveler" name="ReportOfIllTraveler"/>
 <artifact id="StructureDefinition/ReportOfIllTravelerSimple" key="StructureDefinition-ReportOfIllTravelerSimple" name="ReportOfIllTravelerSimple"/>
 <artifact id="Composition/ReportOfIllTravelerSimpleExample" key="Composition-ReportOfIllTravelerSimpleExample" name="Simple Report of Ill Traveler"/>

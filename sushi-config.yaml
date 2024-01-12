@@ -83,21 +83,19 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
   Implementation Guidance:  
-    Terminology: terminology.html
-    Security: security.html
     Conformance: conformance.html
   CDC Interoperability:
     CDC Front Door: frontDoor.html
     Air Contact Investigation CONOPS: conops.html
-    CSTE: cste.html
   Use Case:
     Report of Ill Traveler: illTraveler.html
     Air Contact Investigations: airCIprocess.html
-    Public Health Case Reporting: case.html
   Examples:
     Single leg air travel: Observation-SingleLegFlightExample.html
     Tuberculosis: Condition-TuberculosisExample.html
-    Simple report of Ill Traveler: ReportOfIllTravelerSimpleExample.html
+    Simple report of Ill Traveler: Composition-ReportOfIllTravelerSimpleExample.html
+  Downloads:
+    Capability Statement: CapabilityStatement-IllTravelerReportCapabilityStatement.html
 #    Multiple leg air travel: multilegtravel.html
 #    Measles: measles.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
