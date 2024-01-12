@@ -17,6 +17,7 @@
 <artifact id="ValueSet/InfectiousDiseaseNameVS" key="ValueSet-InfectiousDiseaseNameVS" name="Infectious Disease VS"/>
 <artifact id="ValueSet/InfectiousDiseaseVS" key="ValueSet-InfectiousDiseaseVS" name="Infectious Disease VS"/>
 <artifact id="StructureDefinition/InfectiousDisease" key="StructureDefinition-InfectiousDisease" name="InfectiousDisease"/>
+<artifact id="StructureDefinition/lab-result" key="StructureDefinition-lab-result" name="Lab Result"/>
 <artifact id="StructureDefinition/lab-results" key="StructureDefinition-lab-results" name="Lab Results"/>
 <artifact id="Observation/MultipleLegFlightExample" key="Observation-MultipleLegFlightExample" name="MultipleLegFlightExample"/>
 <artifact id="StructureDefinition/disease-name" key="StructureDefinition-disease-name" name="Name of Disease"/>
