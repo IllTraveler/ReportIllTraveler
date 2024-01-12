@@ -26,6 +26,7 @@
 <artifact id="ValueSet/PortHealthStationVS" key="ValueSet-PortHealthStationVS" name="Port Health Stations VS"/>
 <artifact id="StructureDefinition/rash-onset" key="StructureDefinition-rash-onset" name="Rash Onset Date"/>
 <artifact id="Composition/ReportOfIllTravelerExample" key="Composition-ReportOfIllTravelerExample" name="Report of Ill Traveler"/>
+<artifact id="CapabilityStatement/IllTravelerReportCapabilityStatement" key="CapabilityStatement-IllTravelerReportCapabilityStatement" name="Report of Ill Traveler API CapabilityStatement"/>
 <artifact id="StructureDefinition/ReportOfIllTraveler" key="StructureDefinition-ReportOfIllTraveler" name="ReportOfIllTraveler"/>
 <artifact id="StructureDefinition/ReportOfIllTravelerSimple" key="StructureDefinition-ReportOfIllTravelerSimple" name="ReportOfIllTravelerSimple"/>
 <artifact id="Composition/ReportOfIllTravelerSimpleExample" key="Composition-ReportOfIllTravelerSimpleExample" name="Simple Report of Ill Traveler"/>
