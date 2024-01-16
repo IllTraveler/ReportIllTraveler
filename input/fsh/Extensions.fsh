@@ -21,6 +21,13 @@ Description: "Results of X-Ray"
 * value[x] only Reference($USCoreObservationClinicalResult)
 * value[x] 0..1 MS 
 
+Extension: LabResult
+Id: lab-result
+Title: "Lab Result"
+Description: "Results of Labratory Test"
+* value[x] only Attachment
+* value[x] 0..1 MS 
+
 Extension: Symptom
 Id: symptom
 Title: "Symptoms"

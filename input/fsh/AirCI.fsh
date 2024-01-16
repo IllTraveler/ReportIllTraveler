@@ -130,7 +130,6 @@ Description: "Simple report of an ill traveler"
 
 
 
-
 Profile: FlightItinerary
 Parent: $eCRTransportation
 Description: "Flight information for an ill traveler"
