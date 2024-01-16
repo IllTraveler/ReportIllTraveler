@@ -13,3 +13,7 @@ The next phase of the project involves creating a roadmap. The goal is to catego
 # CONOPS Current State Diagram
 
 <img style="width:70%;height:auto;float:none;align:middle;" src="Screenshot 2024-01-11 at 3.31.24 PM.png"/>
+
+# CONOPS Future State Diagram
+
+<img style="width:70%;height:auto;float:none;align:middle;" src="FutureState.png"/>

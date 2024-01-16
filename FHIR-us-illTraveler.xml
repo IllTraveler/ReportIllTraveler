@@ -41,10 +41,10 @@
 <page key="many" name="(many)"/>
 <page key="airCIprocess" name="Air C Iprocess"/>
 <page key="artifacts" name="Artifacts Summary"/>
-<page key="CSTE" name="CSTE"/>
 <page key="case" name="Case"/>
 <page key="conformance" name="Conformance"/>
 <page key="conops" name="Conops"/>
+<page key="ecr" name="Ecr"/>
 <page key="frontdoor" name="Frontdoor"/>
 <page key="index" name="Home"/>
 <page key="illTraveler" name="Ill Traveler"/>

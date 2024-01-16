@@ -89,7 +89,7 @@ menu:
     Air Contact Investigation CONOPS: conops.html
   Use Case:
     Report of Ill Traveler: illTraveler.html
-    Air Contact Investigations: airCIprocess.html
+    Electronic Case Reporting (eCR): ecr.html
   Examples:
     Single leg air travel: Observation-SingleLegFlightExample.html
     Tuberculosis: Condition-TuberculosisExample.html

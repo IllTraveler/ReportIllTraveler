@@ -29,6 +29,10 @@ When accessing data, Systems SHALL interpret missing data elements within resour
 
 ### US Core
 
-- This IG also leverages the US Core set of profiles defined by HL7 for sharing individual health data in the U.S. Where US Core profiles exist, this IG either leverages them directly or uses them as a base for any additional constraints needed.
+- This IG also leverages the US Core set of profiles defined by HL7 for sharing individual health data in the U.S. Where US Core profiles exist, and supports this use case, this IG either leverages them directly or uses them as a base for any additional constraints needed.
 
 - Where US Core profiles do not yet exist, new profiles have been created.
+
+### eCR
+
+Electronic Case Reporting (eCR) IG has a goal of providing more complete and timely case data, support disease / condition monitoring, and assist in outbreak management and control. 
