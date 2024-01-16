@@ -97,7 +97,7 @@ Description: "Simple report of an ill traveler"
     FlightDetail named flight-detail 0..* and
     InfectiousDiseaseName named infectious-disease-name 1..1 MS and
     Symptom  named symptoms 0..* MS and
-    LabResult named lab-result 0..1
+    LabResults named lab-results 0..*
 * extension[station-transfer-date] ^short = "Date transferred to Q-Station"
 * extension[port-health-station] ^short = "Name of Q-Station"
 * title = "Simple Report of Ill Traveler"
