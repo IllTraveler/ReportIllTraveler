@@ -29,6 +29,7 @@
 <artifact id="CapabilityStatement/IllTravelerReportCapabilityStatement" key="CapabilityStatement-IllTravelerReportCapabilityStatement" name="Report of Ill Traveler API CapabilityStatement"/>
 <artifact id="StructureDefinition/ReportOfIllTraveler" key="StructureDefinition-ReportOfIllTraveler" name="ReportOfIllTraveler"/>
 <artifact id="StructureDefinition/ReportOfIllTravelerSimple" key="StructureDefinition-ReportOfIllTravelerSimple" name="ReportOfIllTravelerSimple"/>
+<artifact id="SearchParameter/report-disease-name" key="SearchParameter-report-disease-name" name="Search Reports of Ill Travelers by Disease"/>
 <artifact id="Composition/ReportOfIllTravelerSimpleExample" key="Composition-ReportOfIllTravelerSimpleExample" name="Simple Report of Ill Traveler"/>
 <artifact id="Observation/SingleLegFlightExample" key="Observation-SingleLegFlightExample" name="SingleLegFlightExample"/>
 <artifact id="Organization/StateExample" key="Organization-StateExample" name="StateExample"/>
